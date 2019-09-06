@@ -1,0 +1,26 @@
+body {
+    background-color: palegreen; 
+}
+
+.container {
+    text-align: center; 
+}
+
+#title {
+    font-size: 40px; 
+    font-family: 'Lacquer', sans-serif;
+}
+
+#burgericon {
+    height: 250px;
+    width: 250px; 
+    border-color: black; 
+    border-width: 7px; 
+    border-style: solid; 
+}
+
+ul { 
+    text-align: center; 
+    text-decoration: none; 
+    font-family: 'Cinzel', serif;
+}
