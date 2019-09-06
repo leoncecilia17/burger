@@ -1,11 +1,11 @@
 $(function () {
-  $(".changetoDevour").on("click", function () {
+  $(".changetoDevour").on("click", function (event) {
     var id = $(this).data("id");
     // Send the PUT request.
     $.ajax("/api/burgers/" + id, {
       type: "PUT"
     }).then(
-      function (response) {
+      function () {
         console.log("changed burger to true");
         // Reload the page to get the updated list
         location.reload();
@@ -13,12 +13,11 @@ $(function () {
     );
   });
 
-  $(".create-form").on("submit", function () {
+  $(".create-form").on("submit", function() {
     event.preventDefault();
-
+    alert("hi..")
     var newBurger = {
-      burger_name: $("#burg").val().trim(),
-      devoured: $("[name=devoured]:checked").val().trim()
+      burger_name: $("#bu").val().trim()
     }; 
 
     $.ajax("/api/burgers", {
