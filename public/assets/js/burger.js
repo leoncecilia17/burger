@@ -13,11 +13,12 @@ $(function () {
     );
   });
 
-  $(".create-burger").on("submit", function (event) {
+  $(".create-form").on("submit", function () {
     event.preventDefault();
 
     var newBurger = {
-      name: $("#bu").val().trim(),
+      burger_name: $("#burg").val().trim(),
+      devoured: $("[name=devoured]:checked").val().trim()
     }; 
 
     $.ajax("/api/burgers", {
