@@ -15,6 +15,7 @@ else {
     });
 }
 
+
 connection.connect(function (error) {
     if (error) {
         console.log("Error connecting: " + error.stack);
