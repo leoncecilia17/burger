@@ -1,13 +1,15 @@
 body {
-    background-color: palegreen; 
+    background-color: peachpuff; 
 }
 
 .container {
     text-align: center; 
+    font-family: 'Cinzel', serif;
+    list-style: none;  
 }
 
 #title {
-    font-size: 40px; 
+    font-size: 60px; 
     font-family: 'Lacquer', sans-serif;
 }
 
@@ -19,8 +21,29 @@ body {
     border-style: solid; 
 }
 
+#burgerTable {
+    background-color: sandybrown;  
+    padding: 20px; 
+}
+
 ul { 
     text-align: center; 
-    text-decoration: none; 
     font-family: 'Cinzel', serif;
+    list-style: none;  
+}
+
+#burgerEntry {
+    background-color: mistyrose; 
+    height: 160px; 
+    width: 350px;
+}
+
+.changetoDevour {
+    border-radius: 8px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button {
+    border-radius: 8px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }

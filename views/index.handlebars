@@ -1,14 +1,15 @@
 {{!-- Header --}}
 <div class="container">
 
+    <h1 id="title">Burger Bar</h1>
     <img id="burgericon" src="assets/img/burgericon.jpg">
 
-    <h1 id="title">Burger Bar</h1>
 </div>
 
-{{!-- Left Hand Menu --}}
+{{!-- Menus --}}
+<br>
 
-<div class="container">
+<div class="container" id="burgerTable">
     <div class="row">
         <div class="col-sm">
             <h3>Burger Menu</h3>
@@ -26,24 +27,28 @@
             </ul>
         </div>
         <div class="col-sm">
-            <h3>Burger's That You Have Ate</h3>
+            <h3>Devoured Burgers</h3>
             {{#each burgers}}
             {{#if devoured}}
-                <li>
-                    {{burger_name}}
-                </li>
+            <li>
+                {{burger_name}}
+            </li>
             {{/if}}
             {{/each}}
-
-            <h2>Add A Burger</h2>
-            <form class="create-form">
-                <div class="form-group">
-                    <label for="bu"> Burger Name: </label>
-                    <input type="text" id="bu" name="name">
-                </div>
-
-                <button type="submit">Submit</button>
-            </form>
         </div>
     </div>
 </div>
+
+<br>
+
+<div class="container" id="burgerEntry">
+    <h2>Create A Burger</h2>
+    <form class="create-form">
+        <div class="form-group">
+            <label for="bu"> Enter Burger Name: </label>
+            <input type="text" id="bu" name="name">
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+    </div>

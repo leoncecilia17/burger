@@ -15,7 +15,6 @@ $(function () {
 
   $(".create-form").on("submit", function() {
     event.preventDefault();
-    alert("hi..")
     var newBurger = {
       burger_name: $("#bu").val().trim()
     }; 
